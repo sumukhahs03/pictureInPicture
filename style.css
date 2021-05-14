@@ -5,4 +5,28 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
+    background: rgb(37, 37, 37);
 }
+
+.container{
+    color: whitesmoke;
+}
+
+#video {
+    border: 1px solid #999;
+    width: 98%;
+    max-width: 860px;
+    margin-top: 5%;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .warn {
+    color: orange;
+  }
+  
+  .info {
+    color: darkgreen;
+  }

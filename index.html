@@ -5,15 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    <title>Picture In Picture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+        <h1 class="heading text-center">You can share any of your open windows as a pop out Picture-in-Picture overlay
+            screen.
+        </h1>
+
+        <h3>The following steps shall guide you on how to use this site:</h3>
+
+        <ul>
+            <li>The Start button is used to begin the screen share. It prompts you to select what you want to see in the
+                picture-in-picture window.</li>
+            <li>The pop out button can then be clicked after the screen has been shared to get a pop out window that
+                displays the required screen which is overlaid on all other applications. The size of it can also be
+                customized!</li>
+            <li>The stop button is used to stop picture-in-picture mode.</li>
+            <li>Remember, the pop-out button is not active until the start button has been pressed.</li>
+        </ul>
+
+        <div class="buttons d-flex justify-content-center">
+            <button type="button" class="btn btn-primary mx-2" id="start" data-bs-toggle="button"
+                autocomplete="off">Start</button>
+            <button type="button" class="btn btn-primary mx-2" id="stop" data-bs-toggle="button" autocomplete="off"
+                aria-pressed="true">Stop</button>
+            <button type="button" class="btn btn-primary mx-2" id="popout" data-bs-toggle="button" autocomplete="off"
+                aria-pressed="true">Pop-Out</button>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <video class="d-flex justify-content-center visually-hidden" id="video" autoplay></video>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
